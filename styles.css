@@ -4,19 +4,18 @@
 }
 
 body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    color: white;
 }
 
 .mailerlite-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    text-align: left;
+    max-width: 400px; /* Keep it clean */
+    margin-top: 20px;
 }
 
 .mailerlite-wrapper {
-    width: 25em;
+    /* REMOVE this width limitation */
+    width: auto;
 }
 
 .video-bg {
@@ -25,13 +24,31 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
-.overlay {
-    background: rgba(0, 0, 0, 0.4); /* Optional: darken video for text contrast */
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
+h1 {
+   font-size: 3.5em;
+}
+h2 {
+    font-size: 3;
+}
+p {
+    font-family: "Alegreya Sans", sans-serif;
+}
+.header-wrapper {
+    font-family: "Syncopate", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-left: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2em;
+    height: 100vh;
 }
